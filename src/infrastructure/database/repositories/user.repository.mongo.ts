@@ -1,4 +1,3 @@
-// infrastructure/database/repositories/user.repository.mongo.ts
 import { Injectable } from '@nestjs/common';
 import { IUserRepository } from '../../../domain/user/repositories/user.repository';
 import { User } from '../../../domain/user/entities/user.entity';

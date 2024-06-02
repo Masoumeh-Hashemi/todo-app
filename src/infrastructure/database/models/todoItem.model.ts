@@ -1,4 +1,3 @@
-// infrastructure/database/models/todo-item.model.ts
 import { Schema, model, Document } from 'mongoose';
 
 export interface TodoItemDocument extends Document {
@@ -12,7 +11,7 @@ export interface TodoItemDocument extends Document {
 }
 
 export const TodoItemSchema = new Schema<TodoItemDocument>({
-  id: { type: String, required: true, unique: true }, // Ensure id mirrors _id
+  id: { type: String, required: true, unique: true },
   listId: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, required: true },
@@ -21,7 +20,6 @@ export const TodoItemSchema = new Schema<TodoItemDocument>({
   createdAt: { type: Date, default: Date.now },
 });
 
-// Sync id with _id before saving
 TodoItemSchema.pre('save', function (next) {
   this.id = this._id;
   next();

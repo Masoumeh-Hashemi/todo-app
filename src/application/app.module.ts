@@ -17,13 +17,12 @@ import { GetUserHandler } from './user/query-handlers/get-user.handler';
 import { TodoSagas } from './todo/sagas/todo.saga';
 import { RemoveTodoListFromUserHandler } from './user/command-handlers/remove-todo-list-from-user.handler';
 import { DeleteTodoItemsByListIdHandler } from './todo/command-handlers/delete-todo-items-by-list-id.handler';
-import { GetTodoListQuery } from './todo/queries/get-todo-list.query';
 import { GetTodoListHandler } from './todo/query-handlers/get-todo-list.handler';
 
 mongoose.set('debug', true);
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/todo-app'), // replace with your MongoDB connection string
+    MongooseModule.forRoot('mongodb://localhost/todo-app'),
     CqrsModule,
     InfrastructureModule,
   ],

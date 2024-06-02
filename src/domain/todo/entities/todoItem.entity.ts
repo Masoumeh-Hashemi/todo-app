@@ -5,7 +5,7 @@ export class TodoItem {
     public title: string,
     public description: string,
     public priority: number,
-    public completed: boolean = false, // Include a field to track completion status
-    public createdAt: Date = new Date(), // Include a field to track creation timestamp
+    public completed: boolean = false,
+    public createdAt: Date = new Date(),
   ) {}
 }

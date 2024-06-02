@@ -1,4 +1,3 @@
-// infrastructure/infrastructure.module.ts
 import { Module } from '@nestjs/common';
 import { DatabaseModule } from './database/database.module';
 

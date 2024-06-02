@@ -1,4 +1,3 @@
-// infrastructure/database/database.module.ts
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { TodoItemSchema } from './models/todoItem.model';

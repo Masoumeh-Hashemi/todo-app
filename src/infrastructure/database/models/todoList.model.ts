@@ -1,4 +1,3 @@
-// infrastructure/database/models/todo-list.model.ts
 import { Schema, model, Document } from 'mongoose';
 
 export interface TodoListDocument extends Document {

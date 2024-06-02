@@ -1,4 +1,3 @@
-// presentation/todo/todo-item.controller.ts
 import { Controller, Post, Put, Delete, Body, Param } from '@nestjs/common';
 import { TodoItemService } from '../../../application/todo/services/todo-item.service';
 import { CreateTodoItemCommand } from '../../../application/todo/commands/create-todo-item.command';

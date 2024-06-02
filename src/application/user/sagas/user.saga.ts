@@ -1,4 +1,3 @@
-// application/user/sagas/user.sagas.ts
 import { Injectable } from '@nestjs/common';
 import { ofType, Saga } from '@nestjs/cqrs';
 import { Observable } from 'rxjs';

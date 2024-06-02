@@ -1,4 +1,3 @@
-// application/todo/event-handlers/todo-list.event-handlers.ts
 import { EventsHandler, IEventHandler } from '@nestjs/cqrs';
 import { TodoListCreatedEvent } from '../../../domain/todo/events/todo-list-created.event';
 

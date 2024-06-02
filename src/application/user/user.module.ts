@@ -18,6 +18,5 @@ import { RemoveTodoListFromUserHandler } from './command-handlers/remove-todo-li
     RemoveTodoListFromUserHandler,
   ],
   exports: [UserService],
-  // exports: [UserService, UserRegisteredEventHandler, UserSagas],
 })
 export class UserModule {}

@@ -1,4 +1,3 @@
-// domain/user/repositories/user.repository.ts
 import { User } from '../entities/user.entity';
 
 export interface IUserRepository {

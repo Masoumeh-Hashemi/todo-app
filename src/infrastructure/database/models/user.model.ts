@@ -1,4 +1,3 @@
-// infrastructure/database/models/user.model.ts
 import { Schema, model, Document } from 'mongoose';
 import { TodoListDocument } from './todoList.model';
 export interface UserDocument extends Document {

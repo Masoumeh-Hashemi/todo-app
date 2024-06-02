@@ -1,4 +1,3 @@
-// domain/todo/repositories/todo-item.repository.ts
 import { TodoItem } from '../entities/todoItem.entity';
 
 export interface ITodoItemRepository {

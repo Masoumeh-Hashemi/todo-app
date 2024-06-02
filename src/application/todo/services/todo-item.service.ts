@@ -11,9 +11,9 @@ import { ResponseWrapper } from 'src/shared/dto/response-wrapper.dto';
 @Injectable()
 export class TodoItemService {
   constructor(
-    @Inject('TodoItemRepository') // Ensure the correct token is used
+    @Inject('TodoItemRepository')
     private readonly todoItemRepository: ITodoItemRepository,
-    @Inject('TodoListRepository') // Ensure the correct token is used
+    @Inject('TodoListRepository')
     private readonly todoListRepository: ITodoListRepository,
   ) {}
 
@@ -83,7 +83,6 @@ export class TodoItemService {
   }
 
   async deleteTodoItemsByListId(listId: string): Promise<void> {
-    // Delete all todo items associated with the specified list id
     await this.todoItemRepository.deleteByListId(listId);
   }
 }

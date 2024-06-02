@@ -24,7 +24,6 @@ import { GetTodoListHandler } from './query-handlers/get-todo-list.handler';
     TodoListService,
     TodoItemService,
     TodoListCreatedEventHandler,
-    // TodoItemCreatedEventHandler,
     TodoListDeletedEvent,
   ],
 })

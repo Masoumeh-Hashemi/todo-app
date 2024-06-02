@@ -1,4 +1,3 @@
-// application/todo/handlers/create-todo-list.handler.ts
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { CreateTodoListCommand } from '../commands/create-todo-list.command';
 import { TodoListService } from '../services/todo-list.service';

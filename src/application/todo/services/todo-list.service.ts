@@ -1,4 +1,3 @@
-// application/todo/services/todo-list.service.ts
 import { Inject, Injectable } from '@nestjs/common';
 import { ITodoListRepository } from '../../../domain/todo/repositories/todoList.repository';
 import { CreateTodoListCommand } from '../commands/create-todo-list.command';
@@ -12,7 +11,7 @@ import { ResponseWrapper } from 'src/shared/dto/response-wrapper.dto';
 @Injectable()
 export class TodoListService {
   constructor(
-    @Inject('TodoListRepository') // Ensure the correct token is used
+    @Inject('TodoListRepository')
     private readonly todoListRepository: ITodoListRepository,
     private readonly eventBus: EventBus,
   ) {}

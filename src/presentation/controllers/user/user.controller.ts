@@ -1,4 +1,3 @@
-// presentation/user/user.controller.ts
 import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { UserService } from '../../../application/user/services/user.service';
 import { RegisterUserCommand } from '../../../application/user/commands/register-user.command';

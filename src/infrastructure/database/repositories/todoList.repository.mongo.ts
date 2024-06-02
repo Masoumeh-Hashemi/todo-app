@@ -1,4 +1,3 @@
-// infrastructure/database/repositories/todo-list.repository.mongo.ts
 import { Injectable } from '@nestjs/common';
 import { ITodoListRepository } from '../../../domain/todo/repositories/todoList.repository';
 import { TodoList } from '../../../domain/todo/entities/todoList.entity';
@@ -43,12 +42,11 @@ export class TodoListMongoRepository implements ITodoListRepository {
     await this.todoListModel.findByIdAndDelete(id).exec();
   }
   async findAllItemsByListId(listId: string): Promise<TodoList | null> {
-    // Populate the 'items' field to retrieve the associated Todo Items
     return this.todoListModel
       .findById(listId)
       .populate({
         path: 'items',
-        options: { sort: { priority: 1 } }, // Sort Todo Items by priority in ascending order
+        options: { sort: { priority: 1 } },
       })
       .exec();
   }

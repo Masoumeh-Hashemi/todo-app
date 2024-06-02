@@ -1,4 +1,3 @@
-// application/user/event-handlers/user.event-handlers.ts
 import { EventsHandler, IEventHandler } from '@nestjs/cqrs';
 import { UserRegisteredEvent } from '../../../domain/user/events/user-registered.event';
 
