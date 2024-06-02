@@ -18,6 +18,12 @@ Unit Tests
 To run unit tests, use:
 
 ```bash
+npm run test
+```
+
+To run e2e tests, use:
+
+```bash
 npm run test:e2e
 ```
 
