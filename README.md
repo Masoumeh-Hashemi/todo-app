@@ -81,3 +81,9 @@ project-root
 ├── tsconfig.json
 └── package.json.lock
 ```
+## Modifications that can be done
+
+1.Mock data
+
+2.Dockerize app
+
